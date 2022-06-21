@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  background-color: hsl(270, 20%, 96%);
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+}
+
+.screen {
+  background-color: hsl(270, 20%, 96%);
+  width: 227px;
+  height: 484px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.top{
+  /*display: flex;*/
+  
+  width: 100%;
+  height: 65px;
+  background-image: linear-gradient(to right,hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  border-radius: 20px 20px 5px 5px;
+  margin-bottom: 10px;
+}
+
+.top-notch {
+  width: 129px;
+  height: 18px;
+  background-color: white;
+  border-radius: 0px 0px 30px 30px;
+  margin: auto;
+}
+
+.profile {
+  width: 100%;
+  height: 41px;
+  display: flex;
+  color: white;
+  align-items: center;
+  margin-bottom: 5px;
+  justify-content: space-around;
+}
+.chat-header {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+}
+.uil-ellipsis-v {
+  margin-right: 14px;
+}
+.profile .uil-angle-left {
+  font-size: 18px;
+}
+
+.profile img {
+  width: 24px;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+.name {
+  font-size: 12px;
+}
+.status{
+  font-size: 7px;
+  color: hsl(206, 6%, 79%);
+}
+
+.chat {
+  overflow: auto;
+  width: 100%;
+  flex-grow: 1;
+  border-radius: 0px 0px 20px 20px;
+  background-color: hsl(270, 20%, 96%);
+}
+.chat .sender {
+  font-size: 8px;
+  display: inline-block;
+  margin-top: 8px;
+}
+.chat .one{
+  background-color: hsl(0, 14%, 91%);
+  color: hsl(276, 55%, 52%);
+  border-radius: 10px 10px 10px 5px;
+  padding: 7px;
+  margin-left: 10px;
+}
+.chat .two{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reply-pics {
+  width: 100%;
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+.reply-pics img {
+  width: 30px;
+  margin-right: 10px;
+  border-radius: 10px;
+  
+}
+
+.chat .two p{
+  background-color: white;
+  border-radius: 10px 10px 5px 10px;
+  padding: 7px;
+  margin-right: 5px;
+}
+
+.price-offer {
+  display: flex;
+  align-items: center;
+  
+  width: 70%;
+  margin-left: 10px;
+  margin-top: 7px;
+  color: white;
+  background-image: linear-gradient(
+    to left,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%));
+  padding: 7px;
+  border-radius: 10px 10px 10px 10px;
+}
+.payment-left {
+ /* color: hsl(270, 20%, 96%);*/
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+.payment-left i {
+  color: hsl(270, 20%, 96%);
+}
+.payment-left p {
+  font-size: 9px;
+  margin-left: 2px;
+}
+.payment-left .price {
+  font-size: 10px;
+  font-weight: bold;
+}
+.message-box {
+  margin: auto;
+  margin-top: 20px;
+  background-color: white;
+  width: 90%;
+  height: 10%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.message-box p {
+  font-size: 10px;
+  color: hsl(206, 6%, 79%);
+  margin-left: 20px;
+}
+.message-box .send {
+  width: 30px;
+  height: 30px;
+  background-color: hsl(271, 36%, 24%);
+  font-size: 25px;
+  justify-content: center;
+  display: flex;
+  margin-right: 5px;
+  align-items: center;
+  border-radius: 100px;
+}
+.message-box .send i {
+  color: white;
+}
+.background h1 {
+  text-align: center;
+  color:  hsl(271, 36%, 24%);
+  margin-bottom: 20px;
+  font-weight: 450;
+}
+.background p {
+  color:  hsl(270, 7%, 64%);
+  font-size: 13px;
+  width: 70%;
+  margin: auto;
+  font-weight: normal;
+  text-align: center;
+}
+.purpleBody {
+  background-image: linear-gradient(
+    to top left,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  width: 50%;
+  height: 400px;
+  align-self: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 0 0 1000px 0px;
+}
+
+.greybody {
+  background-color: hsl(0, 14%, 91%);
+  width: 50%;
+  height: 400px;
+  align-self: flex-start;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 1000px 0px 0px 0px;
+}
+@media only screen and (min-width: 1000px) {
+  body {
+    flex-direction: row;
+  }
+
+  .background {
+    margin-left: 100px;
+  }
+
+  .background h1 {
+    text-align: left;
+  }
+
+  .background p {
+    width: 400px;
+    text-align: left;  
+  }
+
+  .purpleBody {
+    width: 25%;
+    border-radius: 0 0 1000px 1000px;
+    height: 550px;
+  }
+
+  .greybody {
+    width: 25%;
+    height: 550px;
+  }
+}
+ .attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  flex-direction: column;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+  
+}
